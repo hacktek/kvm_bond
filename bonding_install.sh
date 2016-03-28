@@ -40,3 +40,4 @@ sysctl -p
 iptables -A FORWARD -o eth0 -i bond0 -s 192.0.0.0/8 -m conntrack --ctstate NEW -j ACCEPT
 iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 iptables -A POSTROUTING -t nat -o eth0 -j MASQUERADE
+
