@@ -1,5 +1,5 @@
 # kvm_bond
-Script to set up a two tap interface bond on a KVM VPS. Should probably replace code for openvpn static key to dynamically generate a new key each time the script is run but lazy for now and this'll do.
+Script to set up a two tap interface bond on a KVM VPS. Should probably replace code for openvpn static key to dynamically generate a new key each time the script is run but lazy for now and this'll do. You can change the key yourself after the fact by running "openvpn --genkey --secret /etc/openvpn/static.key"
 
 OpenVPN servers are set up for maximum performance so there's no authentication or ciphering, you can change this to your heart's content if you wish to add a security layer.
 
