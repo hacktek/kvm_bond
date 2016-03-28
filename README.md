@@ -11,8 +11,8 @@ All of this has of course, some dependencies:
 
 Other notables (change as needed):
 
-- tap0 -> 10.8.0.1
-- tap1 -> 10.9.0.1
-- bond0 -> 10.10.0.1
+- tap0 -> 10.8.0.1:10.8.0.2
+- tap1 -> 10.9.0.1:10.8.0.2
+- bond0 -> 10.10.0.1:10.10.0.2
 - Remote (client) subnet -> 192.168.3.x/24
 - Bond mode -> IEEE 802.3ad Dynamic link aggregation
