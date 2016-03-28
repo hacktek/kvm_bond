@@ -16,3 +16,4 @@ Other notables (change as needed):
 - bond0 -> 10.10.0.1:10.10.0.2
 - Remote (client) subnet -> 192.168.3.x/24
 - Bond mode -> IEEE 802.3ad Dynamic link aggregation
+- Tested on Ubuntu 14.04 x64

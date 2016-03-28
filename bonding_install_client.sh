@@ -12,7 +12,6 @@ cp openvpn/client2.conf /root/
 #Modify openvpn client config file IP
 echo "IP of the KVM VPS: "
 read ip
-
 echo "remote $ip" >> /root/client.conf
 echo "remote $ip" >> /root/client2.conf
 
