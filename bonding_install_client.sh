@@ -28,7 +28,7 @@ update-rc.d openvpn disable
 #Copy bonding and cleanup scripts to /root and make them executable
 cp bonding.sh /root/
 cp cleanup.sh /root/
-chmod +x /root/bonding.sh
+chmod +x /root/bonding_client.sh
 chmod +x /root/cleanup.sh
 
 #Allow ipv4 forwarding
