@@ -15,6 +15,9 @@ read ip
 echo "remote $ip" >> /root/client.conf
 echo "remote $ip" >> /root/client2.conf
 
+#Add a static route to VPS via network's default gateway
+ip route add $ip via 192.168.3.3 dev eth0
+
 #Move config files to openvpn directory
 mv /root/client.conf /etc/openvpn/
 mv /root/client2.conf /etc/openvpn/
@@ -26,9 +29,9 @@ mv openvpn/static.key /etc/openvpn/
 update-rc.d openvpn disable
 
 #Copy bonding and cleanup scripts to /root and make them executable
-cp bonding.sh /root/
-cp cleanup.sh /root/
-chmod +x /root/bonding_client.sh
+cp bonding_client.sh /root/bonding.sh
+cp cleanup_client.sh /root/cleanup.sh
+chmod +x /root/bonding.sh
 chmod +x /root/cleanup.sh
 
 #Allow ipv4 forwarding

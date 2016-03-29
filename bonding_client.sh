@@ -3,7 +3,7 @@
 ip route del default
 ip route del default
 
-ip route add CHANGEME via 192.168.3.3 dev eth0
+
 
 echo "Enabling modules..."
 modprobe bonding mode=4 xmit_hash_policy=1 miimon=100 lacp_rate=fast
