@@ -8,7 +8,7 @@ OpenVPN servers are set up for maximum performance so there's no authentication 
 
 All of this has of course, some dependencies:
 
-- KVM VPS (Xen might work)
+- KVM VPS (Xen might work). Vultr cloud is great for testing: http://bit.ly/22XZ26Z
 - Root access
 - A machine on the other side to run the openvpn clients/client bonding script and forward traffic from other devices
 
