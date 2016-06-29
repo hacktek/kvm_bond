@@ -37,5 +37,9 @@ echo "Setting tunnel IP addresses..."
 ip addr add 10.8.0.2/30 dev tap0 scope link
 ip addr add 10.9.0.2/30 dev tap1 scope link
 
-ip route add default via 10.10.0.1 dev bond0 initcwnd 10
+ip route add default via 10.10.0.1 dev bond0 initcwnd 16
+echo "Optimizing bond..."
+ifconfig bond0 mtu 6000
+ifconfig bond0 txqueuelen 10000
+echo 3000 > /proc/sys/net/core/netdev_max_backlog
 sleep 10

@@ -34,3 +34,8 @@ ip addr add 10.9.0.1/24 dev tap1 scope link
 
 echo "Setting up return route..."
 ip route add 192.168.3.0/24 via 10.10.0.2 dev bond0
+
+echo "Optimizing bond..."
+ifconfig bond0 mtu 6000
+ifconfig bond0 txqueuelen 10000
+echo 3000 > /proc/sys/net/core/netdev_max_backlog
